@@ -112,13 +112,13 @@ function ModesDisclaimersPreview() {
       <figure className="modes-disclaimer-shot">
         <img
           src={exampleBielikDisclaimer}
-          alt="Pole czatu Bielik z zastrzeżeniem pod polem: Bielik czasami popełnia błędy (jak każdy). Sprawdzaj ważne informacje!"
+          alt="Pole czatu Bielik z zastrzeżeniem pod polem: Bielik czasami popełnia błędy (jak każdy). Sprawdzaj ważne informacje!"
         />
       </figure>
       <figure className="modes-disclaimer-shot">
         <img
           src={exampleDisclaimerSuggestionVerify}
-          alt="Odpowiedź AI z wersją uproszczoną komunikatu i zastrzeżeniem: To tylko sugestia. Zweryfikuj."
+          alt="Odpowiedź AI z wersją uproszczoną komunikatu i zastrzeżeniem: To tylko sugestia. Zweryfikuj."
         />
       </figure>
     </div>
@@ -149,7 +149,7 @@ function PromptModesExplore({
     {
       id: 'dialogue',
       label: 'Dialog',
-      detail: 'Wymiana zdań, pomoc w kontekście',
+      detail: 'Wymiana zdań, pomoc w kontekście',
       image: modeDialogue,
       alt: 'Gdańsk dialogue options: check flight times versus Warsaw, or build a 48-hour weekend itinerary.',
     },
@@ -163,7 +163,7 @@ function PromptModesExplore({
     {
       id: 'disclaimers',
       label: 'Zastrzeżenia',
-      detail: 'Disclaimery — oczekiwania i weryfikacja',
+      detail: 'Disclaimery — oczekiwania i weryfikacja',
     },
   ]
 
@@ -215,7 +215,7 @@ function SystemPromptMock({ showSuggestion }: { showSuggestion: boolean }) {
       <div className="prompt-mock-copy">
         <h2 className="prompt-mock-heading">
           {showSuggestion ? (
-            'Wpływ na instrukcje'
+            'Wpływ na instrukcje'
           ) : (
             <>
               Stary dobry <span className="green">prosty język</span>
@@ -224,8 +224,8 @@ function SystemPromptMock({ showSuggestion }: { showSuggestion: boolean }) {
         </h2>
         <p className="body-copy">
           {showSuggestion
-            ? 'Wytyczne dla treści żyją teraz w plikach .md'
-            : 'Ważne, czyli jakie? UX writerzy znają się na precyzji.'}
+            ? 'Wytyczne dla treści żyją teraz w plikach .md'
+            : 'Ważne, czyli jakie? UX writerzy znają się na precyzji.'}
         </p>
       </div>
       <div className="prompt-mock-panel">
@@ -236,7 +236,7 @@ function SystemPromptMock({ showSuggestion }: { showSuggestion: boolean }) {
           <code>
             <span className="prompt-line">Jesteś asystentem wsparcia.</span>
             {'\n'}
-            <span className="prompt-line">Pisz jasno i zwięźle.</span>
+            <span className="prompt-line">Pisz jasno i zwięźle.</span>
             {'\n'}
             <span
               className={`prompt-line is-hot${showSuggestion ? ' is-on' : ''}`}
@@ -292,11 +292,11 @@ function TrustVisibilitySlide() {
         <span className="green">Widoczność</span>
       </h2>
       <article className="trust-visibility-card trust-visibility-card-single">
-        <h3>Źródła i stan systemu</h3>
+        <h3>Źródła i stan systemu</h3>
         <figure className="trust-visibility-shot is-system">
           <img
             src={exampleVisibilitySystemState}
-            alt="ChatGPT: Working for 29s, plan działania i Searching 16 websites z listą domen."
+            alt="ChatGPT: Working for 29s, plan działania i Searching 16 websites z listą domen."
           />
         </figure>
       </article>
@@ -325,7 +325,7 @@ function TrustControlSlide() {
           <figure className="trust-visibility-shot is-model">
             <img
               src={exampleControlModelPicker}
-              alt="Lista modeli z opisem i wersją, np. Claude Sonnet 5.5 High."
+              alt="Lista modeli z opisem i wersją, np. Claude Sonnet 5.5 High."
             />
           </figure>
         </article>
@@ -334,7 +334,7 @@ function TrustControlSlide() {
           <figure className="trust-visibility-shot is-memory">
             <img
               src={exampleControlMemory}
-              alt="Memory summary — podsumowanie zapisanej pamięci o użytkowniku."
+              alt="Memory summary — podsumowanie zapisanej pamięci o użytkowniku."
             />
           </figure>
         </article>
@@ -350,14 +350,14 @@ function TrustApprovalSlide() {
         <span className="green">Zatwierdzenie</span>
       </h2>
       <p className="body-copy trust-pillar-lede">
-        AI proponuje odpowiedź. Agent-człowiek czyta, poprawia i zatwierdza. Ma
+        AI proponuje odpowiedź. Agent-człowiek czyta, poprawia i zatwierdza. Ma
         pełną kontrolę.
       </p>
       <article className="trust-visibility-card trust-visibility-card-single">
         <figure className="trust-visibility-shot is-zendesk">
           <img
             src={zendeskAutoAssist}
-            alt="Zendesk Auto assist: szkic odpowiedzi i przycisk Approve przed wysyłką."
+            alt="Zendesk Auto assist: szkic odpowiedzi i przycisk Approve przed wysyłką."
           />
         </figure>
       </article>
@@ -379,7 +379,7 @@ function TrustVerificationSlide() {
         <figure className="trust-visibility-shot is-zendesk">
           <img
             src={zendeskWhySuggestion}
-            alt="Zendesk: skąd ta sugestia — źródła i uzasadnienie odpowiedzi AI."
+            alt="Zendesk: skąd ta sugestia — źródła i uzasadnienie odpowiedzi AI."
           />
         </figure>
       </article>
@@ -391,14 +391,14 @@ function TrustWorkplaceShift() {
   return (
     <div className="trust-work-slide">
       <h2 className="display statement-display">
-        AI <span className="pink">podważa domyślne zaufanie</span> w pracy
+        AI <span className="pink">podważa domyślne zaufanie</span> w pracy
       </h2>
       <p className="body-copy trust-lede">
-        Generujemy propozycje z AI i nawet ich nie sprawdzamy. Znormalizujmy
-        mówienie: „eksplorowałam to z AI”.
+        Generujemy propozycje z AI i nawet ich nie sprawdzamy. Znormalizujmy
+        mówienie: „eksplorowałam to z AI”.
         <br />
         <span className="green">
-          (I sprawdź, co w ogóle wrzucasz, serio.)
+          (I sprawdź, co w ogóle wrzucasz, serio.)
         </span>
       </p>
       <cite className="research-cite">
@@ -436,12 +436,12 @@ const slides: Slide[] = [
           />
         </p>
         <h1 className="hero-title">
-          Prompty i nie tylko:
+          Prompty i nie tylko:
           <br />
           <span className="green">
             jak projektować
             <br />
-            interakcje z AI
+            interakcje z AI
           </span>
         </h1>
         <p className="lede">Kalina Tyrkiel-Szymańska</p>
@@ -466,13 +466,13 @@ const slides: Slide[] = [
             <p>
               Projektuję narzędzia AI.
               <br />
-              Projektuję <span className="green">z użyciem AI</span>.
+              Projektuję <span className="green">z użyciem AI</span>.
             </p>
           </div>
           <div className="intro-statement">
             <p>
               Kiedyś uczyłam głównie pisania.{' '}
-              <span className="green">Teraz uczę, jak pracować z AI.</span>
+              <span className="green">Teraz uczę, jak pracować z AI.</span>
             </p>
           </div>
         </div>
@@ -485,7 +485,7 @@ const slides: Slide[] = [
       <div className="psych-bio-layout">
         <div className="psych-bio-copy">
           <h2 className="slide-title wide-title">
-            Ten temat towarzyszy mi od dłuższego czasu…
+            Ten temat towarzyszy mi od dłuższego czasu…
           </h2>
         </div>
         <figure className="psych-bio-frame">
@@ -502,10 +502,10 @@ const slides: Slide[] = [
     content: (
       <div className="stat-slide">
         <p className="stat-figure">
-          Z <span className="green">54%</span> do <span className="green">91%</span> w rok
+          Z <span className="green">54%</span> do <span className="green">91%</span> w rok
         </p>
         <p className="stat-note">
-          Prawie każdy designer używa AI minimum raz w tygodniu.{' '}
+          Prawie każdy designer używa AI minimum raz w tygodniu.{' '}
           <span className="green">75% używa AI codziennie.</span>
         </p>
         <p className="stat-source">Źródło: stateofaidesign.com</p>
@@ -516,7 +516,7 @@ const slides: Slide[] = [
   {
     content: (
       <div className="stat-slide">
-        <h2 className="stat-heading">Do czego designerzy używają AI</h2>
+        <h2 className="stat-heading">Do czego designerzy używają AI</h2>
         <div className="stat-bars" aria-label="Użycie AI w 2026">
           <div className="stat-bar">
             <span>Ideacja</span>
@@ -534,7 +534,7 @@ const slides: Slide[] = [
           </div>
           <div className="stat-bar is-hot">
             <span>
-              Tekst w UI <small>(+18% w skali roku)</small>
+              Tekst w UI <small>(+18% w skali roku)</small>
             </span>
             <span className="stat-bar-track">
               <span className="stat-bar-fill" style={{ width: '70%' }} />
@@ -551,7 +551,7 @@ const slides: Slide[] = [
     content: (
       <div className="era-layout">
         <article className="era-card">
-          <h2>Stałe teksty w stałych miejscach</h2>
+          <h2>Stałe teksty w stałych miejscach</h2>
           <p>
             Przyciski, etykiety, komunikaty błędu: napisane raz, zawsze brzmią
             tak samo.
@@ -641,15 +641,15 @@ const slides: Slide[] = [
         <div className="stat-trio">
           <article>
             <p className="stat-figure">54%</p>
-            <p>Jakość outputu. Obawy o jakość wyników.</p>
+            <p>Jakość outputu. Obawy o jakość wyników.</p>
           </article>
           <article>
             <p className="stat-figure">50%</p>
-            <p>Bezpieczeństwo. Dane i prywatność.</p>
+            <p>Bezpieczeństwo. Dane i prywatność.</p>
           </article>
           <article>
             <p className="stat-figure">34%</p>
-            <p>Etyka albo wpływ na środowisko.</p>
+            <p>Etyka albo wpływ na środowisko.</p>
           </article>
         </div>
         <p className="stat-source">Źródło: NNGroup, 2026. AI in UX Survey.</p>
@@ -660,7 +660,7 @@ const slides: Slide[] = [
   {
     content: (
       <h2 className="display statement-display">
-        Za bardzo <span className="green">ufamy</span> sztucznej{'\u00A0'}inteligencji,
+        Za bardzo <span className="green">ufamy</span> sztucznej{'\u00A0'}inteligencji,
         <br />
         przez{'\u00A0'}co <span className="green">niszczymy zaufanie</span> do{'\u00A0'}
         nas.
@@ -689,7 +689,7 @@ const slides: Slide[] = [
     content: (
       <>
         <h2 className="display statement-display statement-display-trust">
-          Z AI za szybko ufamy, że coś jest prawie gotowe.
+          Z AI za szybko ufamy, że coś jest prawie gotowe.
         </h2>
         <p className="body-copy trust-lede">
           Z tą prezentacją miałam ten sam problem.
@@ -721,7 +721,7 @@ const slides: Slide[] = [
           </div>
           <pre className="prompt-mock-code adversarial-prompt-code">
             <code>
-              Szukaj błędów, luk, słabych miejsc w narracji. Znajdź miejsca,
+              Szukaj błędów, luk, słabych miejsc w narracji. Znajdź miejsca,
               gdzie słuchacz traci uwagę lub zaufanie. Nie poprawiaj, atakuj.
             </code>
           </pre>
@@ -736,7 +736,7 @@ const slides: Slide[] = [
         <h2 className="display statement-display">
           Kontrola i <span className="pink">krytycyzm</span>
         </h2>
-        <p className="body-copy">Dobre praktyki w interfejsach</p>
+        <p className="body-copy">Dobre praktyki w interfejsach</p>
       </>
     ),
     className: 'statement-slide',
@@ -774,7 +774,7 @@ const slides: Slide[] = [
         <div className="zendesk-copy">
           <h2>
             Microcopy:{' '}
-            <span className="green">AI w edytorze wiadomości</span>
+            <span className="green">AI w edytorze wiadomości</span>
           </h2>
           <p className="body-copy">
             Pokazujemy, co AI potrafi. Agent-człowiek wie, jak może go użyć. Ma
@@ -785,7 +785,7 @@ const slides: Slide[] = [
           <figure className="example-frame zendesk-frame">
             <img
               src={zendeskAiPrompts}
-              alt="Zendesk AI writing menu with options: Expand, Simplify, Rewrite in your tone, Make more friendly, Make more formal, plus a custom prompt field."
+              alt="Zendesk AI writing menu with options: Expand, Simplify, Rewrite in your tone, Make more friendly, Make more formal, plus a custom prompt field."
             />
           </figure>
         </div>
@@ -817,7 +817,7 @@ const slides: Slide[] = [
     content: (
       <div className="brevity-slide">
         <h2 className="display statement-display">
-          UX writerka na straży{' '}
+          UX writerka na straży{' '}
           <span className="green">zwięzłości</span>
         </h2>
         <div className="brevity-copy">
@@ -827,17 +827,17 @@ const slides: Slide[] = [
               lengths
             </span>
             <span className="brevity-authors">
-              Soham Poddar, Paramita Koley, Janardan Misra i in. (IIT Kharagpur,
+              Soham Poddar, Paramita Koley, Janardan Misra i in. (IIT Kharagpur,
               ISI Kolkata, Accenture Labs)
             </span>
           </cite>
           <p className="body-copy brevity-finding">
-            „W prawie wszystkich przypadkach odpowiedzi LLM są znacząco dłuższe
-            niż docelowa długość (na wszystkich zbiorach danych).”
+            „W prawie wszystkich przypadkach odpowiedzi LLM są znacząco dłuższe
+            niż docelowa długość (na wszystkich zbiorach danych).”
           </p>
           <p className="brevity-takeaway">
             <strong className="green">
-              UX writerzy walczą o zwięzłość odpowiedzi LLMów (oj, walczą...)
+              UX writerzy walczą o zwięzłość odpowiedzi LLMów (oj, walczą...)
             </strong>
           </p>
         </div>
@@ -853,7 +853,7 @@ const slides: Slide[] = [
           odbiór
         </h2>
         <p className="body-copy">
-          Porozmawiajmy o ograniczeniach poznawczych
+          Porozmawiajmy o ograniczeniach poznawczych
         </p>
       </>
     ),
@@ -897,8 +897,7 @@ const slides: Slide[] = [
             <div className="agent-output">
               <span className="agent-output-meta">Agent</span>
               <p>
-                Nie widzę tego zamówienia. Sprawdź numer na mailu z
-                potwierdzeniem albo podaj e-mail użyty przy zakupie.
+                Nie widzę tego zamówienia. Sprawdź numer na mailu z potwierdzeniem albo podaj e-mail użyty przy zakupie.
               </p>
             </div>
           </article>
@@ -911,8 +910,7 @@ const slides: Slide[] = [
             Abercrombie, Cercas Curry, Dinkar, Rieser, Talat · EMNLP 2023
           </span>
           <span className="research-finding">
-            Pseudoempatia i język emocji wzmacniają personifikację i
-            nadmierne poleganie na systemie — szczególnie w kontekstach
+            Pseudoempatia i język emocji wzmacniają personifikację i nadmierne poleganie na systemie — szczególnie w kontekstach
             wysokiego ryzyka.
           </span>
         </cite>
@@ -923,7 +921,7 @@ const slides: Slide[] = [
     content: (
       <div className="anthro-slide">
         <h2 className="slide-title wide-title">
-          Agent nie jest <span className="green">w Twoim zespole</span>
+          Agent nie jest <span className="green">w Twoim zespole</span>
         </h2>
         <div className="anthro-pair">
           <article className="anthro-avoid">
@@ -934,7 +932,7 @@ const slides: Slide[] = [
             <div className="agent-output">
               <span className="agent-output-meta">Agent</span>
               <p>
-                Cześć! Jako Twój asystent tworzę za Ciebie copy do interfejsu.
+                Cześć! Jako Twój asystent tworzę za Ciebie copy do interfejsu.
               </p>
             </div>
           </article>
@@ -956,10 +954,10 @@ const slides: Slide[] = [
             Believing Anthropomorphism: Cues on Trust in LLMs
           </span>
           <span className="research-meta">
-            Cohn, Chang i in. · CHI 2024 · n = 2 165
+            Cohn, Chang i in. · CHI 2024 · n = 2 165
           </span>
           <span className="research-finding">
-            „Ja” w odpowiedziach agenta często podnosiło ocenę trafności — nawet
+            „Ja” w odpowiedziach agenta często podnosiło ocenę trafności — nawet
             gdy treść była taka sama.
           </span>
         </cite>
@@ -979,7 +977,7 @@ const slides: Slide[] = [
             <div className="agent-output">
               <span className="agent-output-meta">Agent</span>
               <p>
-                Użyj modala. To najlepszy sposób na potwierdzenie.
+                Użyj modala. To najlepszy sposób na potwierdzenie.
               </p>
             </div>
           </article>
@@ -1005,8 +1003,8 @@ const slides: Slide[] = [
             Parasuraman &amp; Riley · Human Factors, 1997 · automation bias
           </span>
           <span className="research-finding">
-            Gdy system brzmi autorytatywnie, ludzie zbyt mocno na nim polegają
-            i pomijają własną weryfikację — nawet gdy output jest błędny.
+            Gdy system brzmi autorytatywnie, ludzie zbyt mocno na nim polegają
+            i pomijają własną weryfikację — nawet gdy output jest błędny.
           </span>
         </cite>
       </div>
@@ -1017,7 +1015,7 @@ const slides: Slide[] = [
       <h2 className="display statement-display language-quote">
         Projektujemy narzędzia AI…
         <br />
-        a jak <span className="green underlined">projektować z AI</span>?
+        a jak <span className="green underlined">projektować z AI</span>?
       </h2>
     ),
     className: 'statement-slide',
@@ -1027,7 +1025,7 @@ const slides: Slide[] = [
       <figure className="media-frame tweet-frame">
         <img
           src={tweetImage}
-          alt="Tweet by Joanna Maciejewska: the biggest problem with pushing all-things-AI is the wrong direction. She wants AI to do laundry and dishes so she can do art and writing, not the reverse."
+          alt="Tweet by Joanna Maciejewska: the biggest problem with pushing all-things-AI is the wrong direction. She wants AI to do laundry and dishes so she can do art and writing, not the reverse."
         />
       </figure>
     ),
@@ -1050,9 +1048,9 @@ const slides: Slide[] = [
         <div>
           <h2>
             Centaur ma <span className="underlined">wyraźną</span> granicę między
-            człowiekiem i maszyną.
+            człowiekiem i maszyną.
             <br />
-            U cyborga jest ona <span className="blurred">zatarta</span>.
+            U cyborga jest ona <span className="blurred">zatarta</span>.
           </h2>
         </div>
         <div className="mode-cards">
@@ -1061,7 +1059,7 @@ const slides: Slide[] = [
               <CentaurIcon />
               <span className="card-label">Centaur</span>
             </div>
-            <p>AI szkicuje komunikaty błędów. Ty decydujesz, co wychodzi na świat.</p>
+            <p>AI szkicuje komunikaty błędów. Ty decydujesz, co wychodzi na świat.</p>
           </article>
           <article className="featured-card">
             <div className="card-head">
@@ -1095,7 +1093,7 @@ const slides: Slide[] = [
           <h2>
             Maszyna decyduje.
             <br />
-            <span className="green">Człowiek bierze winę na siebie.</span>
+            <span className="green">Człowiek bierze winę na siebie.</span>
           </h2>
         </div>
         <div className="mode-cards">
@@ -1104,7 +1102,7 @@ const slides: Slide[] = [
               <CentaurIcon />
               <span className="card-label">Centaur</span>
             </div>
-            <p>AI szkicuje komunikaty błędów. Ty decydujesz, co wychodzi na świat.</p>
+            <p>AI szkicuje komunikaty błędów. Ty decydujesz, co wychodzi na świat.</p>
           </article>
           <article className="reverse-card">
             <div className="card-head">
@@ -1114,8 +1112,8 @@ const slides: Slide[] = [
               <span className="card-label green">Reverse centaur</span>
             </div>
             <p>
-              Ktoś promptuje bez kontekstu i wypuszcza copy. Ty poprawiasz to, co
-              wychodzi — i odpowiadasz za skutki.
+              Ktoś promptuje bez kontekstu i wypuszcza copy. Ty poprawiasz to, co
+              wychodzi — i odpowiadasz za skutki.
             </p>
           </article>
         </div>
@@ -1128,7 +1126,7 @@ const slides: Slide[] = [
       <>
         <blockquote>Jakie jest Twoje zadanie centaura?</blockquote>
         <p className="small-instruction">
-          Prosisz o nową perspektywę? Szkicujesz warianty?
+          Prosisz o nową perspektywę? Szkicujesz warianty?
         </p>
       </>
     ),
@@ -1139,7 +1137,7 @@ const slides: Slide[] = [
       <>
         <blockquote>Jaki jest Twój odwrócony centaur?</blockquote>
         <p className="small-instruction">
-          Gdzie AI pogarsza sprawę – i zrzuca winę na Ciebie?
+          Gdzie AI pogarsza sprawę – i zrzuca winę na Ciebie?
         </p>
       </>
     ),
@@ -1148,10 +1146,10 @@ const slides: Slide[] = [
   {
     content: (
       <div className="summary-slide">
-        <h2 className="slide-title wide-title">Zabierz ze sobą</h2>
+        <h2 className="slide-title wide-title">Zabierz ze sobą</h2>
         <div className="summary-grid">
           <article className="featured-card">
-            <h3>Człowiek zawsze w pętli</h3>
+            <h3>Człowiek zawsze w pętli</h3>
             <p>
               Wszystko może być halucynacją.{' '}
               <span className="green">
@@ -1161,7 +1159,7 @@ const slides: Slide[] = [
             </p>
           </article>
           <article>
-            <h3>Poza UI: instrukcje i ewaluacja</h3>
+            <h3>Poza UI: instrukcje i ewaluacja</h3>
             <p>
               UX writerzy pracują nie tylko nad UI, ale też kształtują odpowiedzi
               AI. <span className="green">Unikaj nadmiernego uczłowieczania.</span>
@@ -1192,18 +1190,18 @@ const slides: Slide[] = [
       <div className="closing-layout">
         <div>
           <h2>
-            Sięgaj dalej z AI.
+            Sięgaj dalej z AI
             <br />
-            <span className="green">Decyzje zostaw sobie.</span>
+            <span className="green">Myślenie i decyzje zostaw sobie</span>
           </h2>
         </div>
         <div className="closing-meta">
           <figure className="closing-qr">
             <img
               src={linkedinQr}
-              alt="Kod QR do profilu LinkedIn Kaliny Tyrkiel-Szymańskiej"
+              alt="Kod QR do profilu LinkedIn Kaliny Tyrkiel-Szymańskiej"
             />
-            <figcaption>Kalina na LinkedIn</figcaption>
+            <figcaption>Kalina na LinkedIn</figcaption>
           </figure>
         </div>
       </div>
