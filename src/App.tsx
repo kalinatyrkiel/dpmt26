@@ -443,7 +443,6 @@ const slides: Slide[] = [
     className: 'hero-slide',
   },
   {
-    footerAffiliation: 'Zendesk',
     content: (
       <div className="intro-grid">
         <div className="intro-identity">
