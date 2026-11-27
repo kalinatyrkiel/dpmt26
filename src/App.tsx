@@ -140,7 +140,7 @@ function PromptModesExplore({
   }[] = [
     {
       id: 'screens',
-      label: 'Ekrany',
+      label: 'Interakcje',
       image: modeScreens,
       alt: 'Select model menu showing Default, GPT-5.6 Terra, and GPT-5.6 Luna options.',
     },
@@ -1040,10 +1040,13 @@ const slides: Slide[] = [
       <div className="metaphor-layout">
         <div>
           <h2>
-            Centaur ma <span className="underlined">wyraźną</span> granicę między
-            człowiekiem i maszyną.
-            <br />
-            U cyborga jest ona <span className="blurred">zatarta</span>.
+            <span>
+              Centaur ma <span className="underlined">wyraźną</span> granicę
+              między człowiekiem i maszyną.
+            </span>
+            <span>
+              U cyborga jest ona <span className="blurred">zatarta</span>.
+            </span>
           </h2>
         </div>
         <div className="mode-cards">
@@ -1067,6 +1070,7 @@ const slides: Slide[] = [
         </div>
       </div>
     ),
+    className: 'centaur-slide',
   },
   {
     content: (
@@ -1144,11 +1148,11 @@ const slides: Slide[] = [
           <article className="featured-card">
             <h3>Człowiek zawsze w pętli</h3>
             <p>
-              Wszystko może być halucynacją.{' '}
+              Wszystko może być halucynacją. Podstawy:{' '}
               <span className="green">
-                Widoczność, kontrola, zatwierdzenie, weryfikacja
+                widoczność, kontrola, weryfikacja
               </span>
-              {': to podstawy.'}
+              {'.'}
             </p>
           </article>
           <article>

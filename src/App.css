@@ -102,6 +102,10 @@ button {
   color: var(--muted);
 }
 
+.slide-footer-name {
+  text-transform: none;
+}
+
 .slide-footer-leading {
   display: flex;
   align-items: baseline;
@@ -1591,6 +1595,14 @@ h3 {
   line-height: 1.05;
 }
 
+.centaur-slide .metaphor-layout h2 {
+  display: grid;
+  gap: 0.08em;
+  max-width: none;
+  font-size: clamp(24px, 2.7vw, 44px);
+  line-height: 1.15;
+}
+
 .blurred {
   filter: blur(0.055em);
 }
@@ -2640,7 +2652,9 @@ h3 {
 }
 
 .question-slide blockquote {
-  max-width: 14ch;
+  max-width: none;
+  font-size: clamp(28px, 3.3vw, 52px);
+  line-height: 1.15;
 }
 
 .pink-wash .kicker {
@@ -2665,6 +2679,10 @@ blockquote {
 
 .closing-slide .slide-content {
   align-content: center;
+}
+
+.closing-slide h2 {
+  line-height: 1.22;
 }
 
 .closing-layout {
