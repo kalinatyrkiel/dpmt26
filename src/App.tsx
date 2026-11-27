@@ -135,35 +135,30 @@ function PromptModesExplore({
   const modes: {
     id: PromptModeId
     label: string
-    detail: string
     image?: string
     alt?: string
   }[] = [
     {
       id: 'screens',
       label: 'Ekrany',
-      detail: 'Przyciski, etykiety, ustalone ścieżki',
       image: modeScreens,
       alt: 'Select model menu showing Default, GPT-5.6 Terra, and GPT-5.6 Luna options.',
     },
     {
       id: 'dialogue',
       label: 'Dialog',
-      detail: 'Wymiana zdań, pomoc w kontekście',
       image: modeDialogue,
       alt: 'Gdańsk dialogue options: check flight times versus Warsaw, or build a 48-hour weekend itinerary.',
     },
     {
       id: 'prompts',
       label: 'Prompty',
-      detail: 'Intencja — sugerowana lub wpisana swobodnie',
       image: modePrompts,
       alt: 'Tatra prompt suggestions for hiking apps, packing, mountain huts, via ferrata, and avalanche safety.',
     },
     {
       id: 'disclaimers',
-      label: 'Zastrzeżenia',
-      detail: 'Disclaimery — oczekiwania i weryfikacja',
+      label: 'Zastrzeżenia (disclaimery)',
     },
   ]
 
@@ -187,7 +182,6 @@ function PromptModesExplore({
             >
               <span className="modes-menu-item-copy">
                 <strong>{mode.label}</strong>
-                <small>{mode.detail}</small>
               </span>
               {activeId === mode.id && (
                 <span className="modes-check" aria-hidden="true">
@@ -428,7 +422,6 @@ const slides: Slide[] = [
             src={logoDesignPractice}
             alt="Design Practice"
           />
-          <span aria-hidden="true">×</span>
           <img
             className="logo-mobile-trends"
             src={logoMobileTrends}
@@ -594,7 +587,7 @@ const slides: Slide[] = [
   },
   {
     content: (
-      <h2 className="display statement-display language-quote language-quote-italic">
+      <h2 className="display statement-display language-quote">
         You can’t take the <span className="green">language</span>
         <br />
         out of the <span className="green">large language model</span>
@@ -1015,7 +1008,7 @@ const slides: Slide[] = [
       <h2 className="display statement-display language-quote">
         Projektujemy narzędzia AI…
         <br />
-        a jak <span className="green underlined">projektować z AI</span>?
+        a jak <span className="green">projektować z AI</span>?
       </h2>
     ),
     className: 'statement-slide',
